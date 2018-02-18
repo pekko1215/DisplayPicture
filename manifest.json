@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "DisplayPicture",
+  "description": "いや消されると結構困るんだが",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.co.jp/search*"],
+      "js": ["jquery-3.3.1.min.js","index.js"]
+    }
+  ],
+  "permissions":["webNavigation"]
+
+}
